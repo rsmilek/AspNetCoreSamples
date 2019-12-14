@@ -17,15 +17,5 @@ namespace MorrisJSDotVVM.ViewModels
 		{
 			Title = "Hello from DotVVM!";
 		}
-
-        public int Count
-        {
-            get;
-            set;
-        }
-        public void Counter()
-        {
-            Count++;
-        }
     }
 }

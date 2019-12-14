@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorrisJSDotVVM", "MorrisJSDotVVM\MorrisJSDotVVM.csproj", "{825D437A-58CD-4ED6-AF04-1E27F5DB3C69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorrisJSDotVVM", "MorrisJSDotVVM\MorrisJSDotVVM.csproj", "{627D2226-2538-4D5E-80F7-9878EB674CAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{825D437A-58CD-4ED6-AF04-1E27F5DB3C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{825D437A-58CD-4ED6-AF04-1E27F5DB3C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{825D437A-58CD-4ED6-AF04-1E27F5DB3C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{825D437A-58CD-4ED6-AF04-1E27F5DB3C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627D2226-2538-4D5E-80F7-9878EB674CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627D2226-2538-4D5E-80F7-9878EB674CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627D2226-2538-4D5E-80F7-9878EB674CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627D2226-2538-4D5E-80F7-9878EB674CAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {949605C9-17B7-479E-A8FD-EE05F1B82031}
+		SolutionGuid = {CC1B6D9A-BE15-4111-99C0-C5DCC38735DC}
 	EndGlobalSection
 EndGlobal

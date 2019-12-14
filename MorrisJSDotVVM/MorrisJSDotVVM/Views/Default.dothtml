@@ -1,12 +1,6 @@
 ﻿@viewModel MorrisJSDotVVM.ViewModels.DefaultViewModel, MorrisJSDotVVM
 @masterPage Views/MasterPage.dotmaster
-	<dot:Content ContentPlaceHolderID="MainContent">
+<dot:Content ContentPlaceHolderID="MainContent">
 
-		<h1>{{value: Title}}</h1>
-
-		<p>
-			<span>{{value: Count}}</span>
-			<dot:Button Text="Counter" Click="{command: Counter()}" />
-		</p>
-
-	</dot:Content>
+	<h1>{{value: Title}}</h1>
+</dot:Content>
