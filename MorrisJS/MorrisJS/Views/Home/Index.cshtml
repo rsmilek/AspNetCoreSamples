@@ -1,0 +1,55 @@
+﻿@model List<SimpleReportViewModel>
+@{
+    var YearValues = Newtonsoft.Json.JsonConvert.SerializeObject(Model.ToList());
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+</head>
+<body>
+    <div id="myfirstchart" style="height: 500px;"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+    //Javascript way how to get JSON object
+    //var yearValues2 = JSON.parse('@Html.Raw(YearValues)');
+
+    new Morris.Line({
+        // ID of the element in which to draw the chart.
+        element: 'myfirstchart',
+
+        // Chart data records -- each entry in this array corresponds to a point on the chart.
+        //data: [
+        //{ Year: '2008', Value: 20 },
+        //{ Year: '2009', Value: 10 },
+        //{ Year: '2010', Value: 5 },
+        //{ Year: '2011', Value: 5 },
+        //{ Year: '2012', Value: 20 }
+        //],
+        // Chart data records taken from JSON string
+        data: @Html.Raw(YearValues),
+        // Chart data records taken from JSON object
+        //data: yearValues2,
+
+        // The name of the data record attribute that contains x-values.
+        xkey: 'Year',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['Value'],
+        // Labels for the ykeys -- will be displayed when you hover over the chart.
+        labels: ['Value'],
+
+        // Set to true to only show the hover legend when the mouse cursor is over the chart.
+        hideHover: true,
+        // Range on Y axis
+        ymax: 40,
+        ymin: -40
+    });
+</script>
