@@ -3,11 +3,22 @@
 
 <dot:Content ContentPlaceHolderID="MainContent">
 
-	<h1>{{value: Title}}</h1>
+    <!DOCTYPE html>
 
-	<p>
-		<span>{{value: Count}}</span>
-		<dot:Button Text="Counter" Click="{command: Counter()}" />
-	</p>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <script src="~/Scripts/raphael-min.js"></script>
+        <script src="~/Scripts/morris.js"></script>
+    </head>
+    <body>
+        <h1>{{value: Title}}</h1>
+
+        <p>
+            <span>{{value: Count}}</span>
+            <dot:Button Text="Counter" Click="{command: Counter()}" />
+        </p>
+    </body>
+    </html>
 
 </dot:Content>

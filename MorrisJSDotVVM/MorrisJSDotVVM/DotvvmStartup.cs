@@ -47,9 +47,14 @@ namespace MorrisJSDotVVM
             {
                 Location = new UrlResourceLocation("~/lib/jquery/dist/jquery.min.js")
             });
+            config.Resources.Register("dotvvm-morris", new ScriptResource()
+            {
+                Location = new UrlResourceLocation("~/Scripts/dotvvm-morris.js"),
+                Dependencies = new[] { "dotvvm" }
+            });
         }
 
-		public void ConfigureServices(IDotvvmServiceCollection options)
+        public void ConfigureServices(IDotvvmServiceCollection options)
         {
             options.AddDefaultTempStorages("temp");
 		}
