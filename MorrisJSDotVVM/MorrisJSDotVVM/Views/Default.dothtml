@@ -3,22 +3,20 @@
 
 <dot:Content ContentPlaceHolderID="MainContent">
 
-    <!DOCTYPE html>
+    <h1>{{value: Title}}</h1>
+    
+    <dot:RouteLink RouteName="StatusPage">Show Compilation Status Page</dot:RouteLink>
 
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title></title>
-        <script src="~/Scripts/raphael-min.js"></script>
-        <script src="~/Scripts/morris.js"></script>
-    </head>
-    <body>
-        <h1>{{value: Title}}</h1>
+    <p>
+        <span>{{value: Count}}</span>
+        <dot:Button Text="Counter" Click="{command: Counter()}" />
+    </p>
 
-        <p>
-            <span>{{value: Count}}</span>
-            <dot:Button Text="Counter" Click="{command: Counter()}" />
-        </p>
-    </body>
-    </html>
+    <%--
+    <div class="col-lg-6" style="padding-bottom: 20px">
+    <h2>Temperature</h2>
+    <div data-bind="dotvvm-Morris: Data, dotvvm-Morris-Series: { xMemberName: 'DateFormatted', yMemberNames: ['Temperature'], labels: ['Temperature'], yMin: -20, yMax: 50, dateFormat: 'g', yLabelFormat: 'n1', postUnit: ' °C'}"></div>
+    </div>
+    --%>
 
 </dot:Content>

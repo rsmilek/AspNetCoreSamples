@@ -1,6 +1,7 @@
 ﻿using DotVVM.Framework.Configuration;
 using DotVVM.Framework.ResourceManagement;
 using DotVVM.Framework.Routing;
+using DotVVM.Diagnostics.StatusPage;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MorrisJSDotVVM
@@ -47,15 +48,16 @@ namespace MorrisJSDotVVM
             {
                 Location = new UrlResourceLocation("~/lib/jquery/dist/jquery.min.js")
             });
-            config.Resources.Register("dotvvm-morris", new ScriptResource()
-            {
-                Location = new UrlResourceLocation("~/Scripts/dotvvm-morris.js"),
-                Dependencies = new[] { "dotvvm" }
-            });
+            //config.Resources.Register("dotvvm-morris", new ScriptResource()
+            //{
+            //    Location = new UrlResourceLocation("~/Scripts/dotvvm-morris.js"),
+            //    Dependencies = new[] { "dotvvm" }
+            //});
         }
 
         public void ConfigureServices(IDotvvmServiceCollection options)
         {
+            options.AddStatusPage();
             options.AddDefaultTempStorages("temp");
 		}
     }
