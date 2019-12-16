@@ -29,8 +29,8 @@ namespace DotvvmApplication1
         private void ConfigureResources(DotvvmConfiguration config, string applicationPath)
         {
             // ATTENSION: NOT WORKING FOR ME :-(. SOLVED IN .dotmaster
-            //// Note that the 'jquery' resource is registered in DotVVM and points to official jQuery CDN.
-            //// We have jQuery in our application, so we have to change its URL
+            // Note that the 'jquery' resource is registered in DotVVM and points to official jQuery CDN.
+            // We have jQuery in our application, so we have to change its URL
             //config.Resources.Register("jquery", new ScriptResource()
             //{
             //    Location = new FileResourceLocation("/wwwroot/Scripts/jquery-3.0.0.min.js")
@@ -41,6 +41,20 @@ namespace DotvvmApplication1
             //{
             //    Location = new FileResourceLocation("/wwwroot/Scripts/bootstrap.min.js"),
             //    Dependencies = new[] { "jquery" }
+            //});
+
+            //// register raphael
+            //config.Resources.Register("raphael", new ScriptResource()
+            //{
+            //    Location = new FileResourceLocation("/wwwroot/Scripts/raphael-min.js"),
+            //    Dependencies = new[] { "jquery" }
+            //});
+
+            //// register morris
+            //config.Resources.Register("morris", new ScriptResource()
+            //{
+            //    Location = new FileResourceLocation("/wwwroot/Scripts/morris.min.js"),
+            //    Dependencies = new[] { "raphael" }
             //});
         }
 

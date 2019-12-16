@@ -26,14 +26,14 @@
 
     <div class="jumbotron text-center">
         <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect!</p>
     </div>
 
-    <div ID="myfirstchart" style="height: 500px;"></div>
+    <div ID="myfirstchart" style="height: 400px;"></div>
 
     <dot:ContentPlaceHolder ID="MainContent" />
 
     <%--<dot:RequiredResource Name="bootstrap" />--%>
+    <%--<dot:RequiredResource Name="morris" />--%>
 </body>
 </html>
 

@@ -4,5 +4,4 @@
 
 	<h1>{{value: Title}}</h1>
 
-	<%--<dot:RequiredResource Name="bootstrap" />--%>
 </dot:Content>
