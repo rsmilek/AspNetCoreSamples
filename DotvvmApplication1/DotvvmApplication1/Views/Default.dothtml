@@ -1,9 +1,15 @@
 ﻿@viewModel DotvvmApplication1.ViewModels.DefaultViewModel, DotvvmApplication1
 @masterPage Views/MasterPage.dotmaster
-<dot:Content ContentPlaceHolderID="MainContent">
+	<dot:Content ContentPlaceHolderID="MainContent">
 
-	<h1>{{value: Title}}</h1>
+		<h1>{{value: Title}}</h1>
 
-	<div ID="myfirstchart" style="height: 400px;"></div>
+		<div ID="myfirstchart" style="height: 400px;"></div>
 
-</dot:Content>
+		<div class="col-lg-6" style="padding-bottom: 20px">
+			<h1>Temperature</h1>
+			<div data-bind="dotvvm-Morris: Data, dotvvm-Morris-Series: { xMemberName: 'DateFormatted', yMemberNames: ['Temperature'], labels: ['Temperature'], yMin: -20, yMax: 50, dateFormat: 'g', yLabelFormat: 'n1', postUnit: ' °C'}"></div>
+		</div>
+
+		<dot:RequiredResource Name="dotvvm-morris" />
+	</dot:Content>

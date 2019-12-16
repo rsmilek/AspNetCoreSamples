@@ -56,6 +56,14 @@ namespace DotvvmApplication1
             //    Location = new FileResourceLocation("/wwwroot/Scripts/morris.min.js"),
             //    Dependencies = new[] { "raphael" }
             //});
+
+            config.Resources.Register("dotvvm-morris", new ScriptResource()
+            {
+                //Url = "~/Scripts/dotvvm-morris.js",
+                Location = new FileResourceLocation("~/wwwroot/Scripts/dotvvm-morris.js"),
+                Dependencies = new[] { "dotvvm" }
+            });
+
         }
 
         public void ConfigureServices(IDotvvmServiceCollection options)
