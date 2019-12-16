@@ -28,41 +28,20 @@ namespace DotvvmApplication1
 
         private void ConfigureResources(DotvvmConfiguration config, string applicationPath)
         {
-            //// register custom resources and adjust paths to the built-in resources
-            //config.Resources.Register("bootstrap-css", new StylesheetResource
-            //{
-            //    Location = new UrlResourceLocation("~/lib/bootstrap/dist/css/bootstrap.min.css")
-            //});
-            //config.Resources.Register("bootstrap-theme", new StylesheetResource
-            //{
-            //    Location = new UrlResourceLocation("~/lib/bootstrap/dist/css/bootstrap-theme.min.css"),
-            //    Dependencies = new[] { "bootstrap-css" }
-            //});
-            //config.Resources.Register("bootstrap", new ScriptResource
-            //{
-            //    Location = new UrlResourceLocation("~/lib/bootstrap/dist/js/bootstrap.min.js"),
-            //    Dependencies = new[] { "bootstrap-css" , "jquery" }
-            //});
-            //config.Resources.Register("jquery", new ScriptResource
-            //{
-            //    Location = new UrlResourceLocation("~/lib/jquery/dist/jquery.min.js")
-            //});
-
-
-            // Note that the 'jquery' resource is registered in DotVVM and points to official jQuery CDN.
-            // We have jQuery in our application, so we have to change its URL
+            // ATTENSION: NOT WORKING FOR ME :-(. SOLVED IN .dotmaster
+            //// Note that the 'jquery' resource is registered in DotVVM and points to official jQuery CDN.
+            //// We have jQuery in our application, so we have to change its URL
             //config.Resources.Register("jquery", new ScriptResource()
             //{
-            //    Location = new FileResourceLocation("wwwroot/Scripts/jquery-2.1.3.min.js")
+            //    Location = new FileResourceLocation("/wwwroot/Scripts/jquery-3.0.0.min.js")
             //});
 
             //// register bootstrap
             //config.Resources.Register("bootstrap", new ScriptResource()
             //{
-            //    Location = new FileResourceLocation("wwwroot/Scripts/bootstrap.min.js"),
+            //    Location = new FileResourceLocation("/wwwroot/Scripts/bootstrap.min.js"),
             //    Dependencies = new[] { "jquery" }
             //});
-
         }
 
         public void ConfigureServices(IDotvvmServiceCollection options)

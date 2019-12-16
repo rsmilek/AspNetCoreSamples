@@ -6,12 +6,11 @@
     <meta charset="utf-8" />
     <title>DotvvmApplication1</title>
 
-    <%--<dot:RequiredResource Name="bootstrap" />--%>
-
     <link rel="stylesheet" type="text/css" href="~/Style/Bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="~/Style/Default.css" />
     <link rel="stylesheet" type="text/css" href="~/Style/morris.css">
 
+    <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/jquery-3.0.0.min.js"></script>
     <script src="~/Scripts/raphael-min.js"></script>
     <script src="~/Scripts/morris.min.js"></script>
@@ -24,12 +23,17 @@
 </head>
 <body>
     <h1>Pokus</h1>
-    <div id="myfirstchart" style="height: 500px;"></div>
+
+    <div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div ID="myfirstchart" style="height: 500px;"></div>
 
     <dot:ContentPlaceHolder ID="MainContent" />
 
     <%--<dot:RequiredResource Name="bootstrap" />--%>
-    <%--<dot:RequiredResource Name="jquery" />--%>
 </body>
 </html>
 
