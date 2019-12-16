@@ -33,33 +33,33 @@ namespace DotvvmApplication1
             // We have jQuery in our application, so we have to change its URL
             //config.Resources.Register("jquery", new ScriptResource()
             //{
-            //    Location = new FileResourceLocation("/wwwroot/Scripts/jquery-3.0.0.min.js")
+            //    Location = new FileResourceLocation("~/wwwroot/Scripts/jquery-3.0.0.min.js")
             //});
 
             //// register bootstrap
             //config.Resources.Register("bootstrap", new ScriptResource()
             //{
-            //    Location = new FileResourceLocation("/wwwroot/Scripts/bootstrap.min.js"),
+            //    Location = new FileResourceLocation("~/wwwroot/Scripts/bootstrap.min.js"),
             //    Dependencies = new[] { "jquery" }
             //});
 
             //// register raphael
             //config.Resources.Register("raphael", new ScriptResource()
             //{
-            //    Location = new FileResourceLocation("/wwwroot/Scripts/raphael-min.js"),
+            //    Location = new FileResourceLocation("~/wwwroot/Scripts/raphael-min.js"),
             //    Dependencies = new[] { "jquery" }
             //});
 
             //// register morris
             //config.Resources.Register("morris", new ScriptResource()
             //{
-            //    Location = new FileResourceLocation("/wwwroot/Scripts/morris.min.js"),
+            //    Location = new FileResourceLocation("~/wwwroot/Scripts/morris.min.js"),
             //    Dependencies = new[] { "raphael" }
             //});
 
+            // register dotvvm-morris
             config.Resources.Register("dotvvm-morris", new ScriptResource()
             {
-                //Url = "~/Scripts/dotvvm-morris.js",
                 Location = new FileResourceLocation("~/wwwroot/Scripts/dotvvm-morris.js"),
                 Dependencies = new[] { "dotvvm" }
             });

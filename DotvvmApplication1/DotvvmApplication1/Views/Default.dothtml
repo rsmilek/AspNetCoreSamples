@@ -11,5 +11,6 @@
 			<div data-bind="dotvvm-Morris: Data, dotvvm-Morris-Series: { xMemberName: 'DateFormatted', yMemberNames: ['Temperature'], labels: ['Temperature'], yMin: -20, yMax: 50, dateFormat: 'g', yLabelFormat: 'n1', postUnit: ' °C'}"></div>
 		</div>
 
+		<%--<dot:RequiredResource Name="bootstrap" />--%>
 		<dot:RequiredResource Name="dotvvm-morris" />
 	</dot:Content>

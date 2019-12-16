@@ -31,7 +31,6 @@
     <dot:ContentPlaceHolder ID="MainContent" />
 
     <%--<dot:RequiredResource Name="bootstrap" />--%>
-    <%--<dot:RequiredResource Name="morris" />--%>
 </body>
 </html>
 
