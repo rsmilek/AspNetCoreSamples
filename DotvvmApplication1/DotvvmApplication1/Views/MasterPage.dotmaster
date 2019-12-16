@@ -1,0 +1,66 @@
+﻿@viewModel DotvvmApplication1.ViewModels.MasterPageViewModel, DotvvmApplication1
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DotvvmApplication1</title>
+
+    <%--<dot:RequiredResource Name="bootstrap" />--%>
+
+    <%--<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />--%>
+
+    <%--<link rel="stylesheet" type="text/css" href="~/Style/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Style/Default.css" />--%>
+    <link rel="stylesheet" type="text/css" href="~/Style/morris.css">
+
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/raphael-min.js"></script>
+    <script src="~/Scripts/morris.min.js"></script>
+
+
+    <%--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">--%>
+    <%--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>--%>
+    <%--<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>--%>
+    <%--<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>--%>
+
+    <script>
+        $(document).ready(function () {
+            $("h1").css("color", "#0088ff");
+        });
+    </script>
+
+</head>
+<body>
+    <h1>Pokus</h1>
+    <div id="myfirstchart" style="height: 500px;"></div>
+
+    <dot:ContentPlaceHolder ID="MainContent" />
+
+    <%--<dot:RequiredResource Name="bootstrap" />--%>
+    <%--<dot:RequiredResource Name="jquery" />--%>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+    new Morris.Line({
+        // ID of the element in which to draw the chart.
+        element: 'myfirstchart',
+        // Chart data records -- each entry in this array corresponds to a point on the chart.
+        data: [
+        { Year: '2008', Value: 20 },
+        { Year: '2009', Value: 10 },
+        { Year: '2010', Value: 5 },
+        { Year: '2011', Value: 5 },
+        { Year: '2012', Value: 20 }
+        ],
+        // The name of the data record attribute that contains x-values.
+        xkey: 'Year',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['Value'],
+        // Labels for the ykeys -- will be displayed when you hover over the chart.
+        labels: ['Value']
+    });
+</script>

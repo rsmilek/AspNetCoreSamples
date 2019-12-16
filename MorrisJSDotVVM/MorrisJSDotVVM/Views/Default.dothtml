@@ -12,11 +12,11 @@
         <dot:Button Text="Counter" Click="{command: Counter()}" />
     </p>
 
-    <%--
+    
     <div class="col-lg-6" style="padding-bottom: 20px">
     <h2>Temperature</h2>
     <div data-bind="dotvvm-Morris: Data, dotvvm-Morris-Series: { xMemberName: 'DateFormatted', yMemberNames: ['Temperature'], labels: ['Temperature'], yMin: -20, yMax: 50, dateFormat: 'g', yLabelFormat: 'n1', postUnit: ' °C'}"></div>
     </div>
-    --%>
+    
 
 </dot:Content>

@@ -20,22 +20,22 @@ namespace MorrisJSDotVVM.ViewModels
 		{
 			Title = "Hello from DotVVM!";
 
-            //var now = DateTime.Now;
-            //DateTime dt;
+            var now = DateTime.Now;
+            DateTime dt;
 
-            //Data = new List<ChartData>();
+            Data = new List<ChartData>();
 
-            //dt = now.AddHours(0);
-            //Data.Add(new ChartData { Temperature = 10, Date = dt });
+            dt = now.AddHours(0);
+            Data.Add(new ChartData { Temperature = 10, Date = dt });
 
-            //dt = now.AddHours(1);
-            //Data.Add(new ChartData { Temperature = 20, Date = dt });
+            dt = now.AddHours(1);
+            Data.Add(new ChartData { Temperature = 20, Date = dt });
 
-            //dt = now.AddHours(2);
-            //Data.Add(new ChartData { Temperature = 30, Date = dt });
+            dt = now.AddHours(2);
+            Data.Add(new ChartData { Temperature = 30, Date = dt });
 
-            //dt = now.AddHours(3);
-            //Data.Add(new ChartData { Temperature = 40, Date = dt });
+            dt = now.AddHours(3);
+            Data.Add(new ChartData { Temperature = 40, Date = dt });
         }
 
         public int Count

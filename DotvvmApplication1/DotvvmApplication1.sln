@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotvvmApplication1", "DotvvmApplication1\DotvvmApplication1.csproj", "{2B0BF3F4-A313-47F4-90AD-5659A37D4A0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B0BF3F4-A313-47F4-90AD-5659A37D4A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0BF3F4-A313-47F4-90AD-5659A37D4A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0BF3F4-A313-47F4-90AD-5659A37D4A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0BF3F4-A313-47F4-90AD-5659A37D4A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EE98109-E001-49CE-8BFA-F8548EE14FC0}
+	EndGlobalSection
+EndGlobal
