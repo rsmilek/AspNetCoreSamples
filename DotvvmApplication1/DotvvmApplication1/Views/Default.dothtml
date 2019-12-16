@@ -4,4 +4,6 @@
 
 	<h1>{{value: Title}}</h1>
 
+	<div ID="myfirstchart" style="height: 400px;"></div>
+
 </dot:Content>

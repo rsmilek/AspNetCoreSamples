@@ -28,8 +28,6 @@
         <h1>My First Bootstrap Page</h1>
     </div>
 
-    <div ID="myfirstchart" style="height: 400px;"></div>
-
     <dot:ContentPlaceHolder ID="MainContent" />
 
     <%--<dot:RequiredResource Name="bootstrap" />--%>
