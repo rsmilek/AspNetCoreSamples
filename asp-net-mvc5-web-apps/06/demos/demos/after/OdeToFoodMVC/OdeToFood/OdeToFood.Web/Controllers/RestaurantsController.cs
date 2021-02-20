@@ -38,7 +38,11 @@ namespace OdeToFood.Web.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return View();
+            ////return View();
+
+            // My fix
+            var model = new Restaurant();
+            return View(model);
         }
 
         [HttpPost]

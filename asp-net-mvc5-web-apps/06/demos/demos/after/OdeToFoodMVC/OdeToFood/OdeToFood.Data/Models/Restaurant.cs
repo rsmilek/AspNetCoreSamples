@@ -11,7 +11,7 @@ namespace OdeToFood.Data.Models
     {
         public int Id { get; set; }
 
-        [Required]  
+        [Required]
         [MaxLength(255)]
         public string Name { get; set; }
 
