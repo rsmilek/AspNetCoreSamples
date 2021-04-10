@@ -11,7 +11,7 @@ namespace ChartJS.Controllers
 {
     public class HomeController : Controller
     {
-        private Random rnd = new Random();
+        private readonly Random rnd = new Random();
 
         private readonly ILogger<HomeController> _logger;
 
@@ -23,37 +23,40 @@ namespace ChartJS.Controllers
         public IActionResult Index()
         {
             //list of moths
-            var lstModel = new List<SimpleReportViewModel>();
-            lstModel.Add(new SimpleReportViewModel
+            var lstModel = new List<SimpleReportViewModel>
             {
-                DimensionOne = "January",
-                Quantity = rnd.Next(-100, 100)
-            });
-            lstModel.Add(new SimpleReportViewModel
-            {
-                DimensionOne = "February",
-                Quantity = rnd.Next(-100, 100)
-            });
-            lstModel.Add(new SimpleReportViewModel
-            {
-                DimensionOne = "March",
-                Quantity = rnd.Next(-100, 100)
-            });
-            lstModel.Add(new SimpleReportViewModel
-            {
-                DimensionOne = "May",
-                Quantity = rnd.Next(-100, 100)
-            });
-            lstModel.Add(new SimpleReportViewModel
-            {
-                DimensionOne = "June",
-                Quantity = rnd.Next(-100, 100)
-            });
-            lstModel.Add(new SimpleReportViewModel
-            {
-                DimensionOne = "July",
-                Quantity = rnd.Next(-100, 100)
-            });
+                new SimpleReportViewModel
+                {
+                    DimensionOne = "January",
+                    Quantity = rnd.Next(-100, 100)
+                },
+                new SimpleReportViewModel
+                {
+                    DimensionOne = "February",
+                    Quantity = rnd.Next(-100, 100)
+                },
+                new SimpleReportViewModel
+                {
+                    DimensionOne = "March",
+                    Quantity = rnd.Next(-100, 100)
+                },
+                new SimpleReportViewModel
+                {
+                    DimensionOne = "May",
+                    Quantity = rnd.Next(-100, 100)
+                },
+                new SimpleReportViewModel
+                {
+                    DimensionOne = "June",
+                    Quantity = rnd.Next(-100, 100)
+                },
+                new SimpleReportViewModel
+                {
+                    DimensionOne = "July",
+                    Quantity = rnd.Next(-100, 100)
+                }
+            };
+            _logger.LogInformation("Endpoint Index called!");
             return View(lstModel);
         }
 
