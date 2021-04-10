@@ -19,7 +19,7 @@ namespace asp_iot_chart.Pages
 
         public void OnGet()
         {
-
+            _logger.LogInformation("OnGet");
         }
     }
 }
